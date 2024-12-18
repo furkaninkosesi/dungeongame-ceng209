@@ -40,34 +40,34 @@ int main(){
             exit(0);
         }
 
-        if (strcmp(command, "1") == 0 || strcmp(command, "move") == 0) {
+        else if (strcmp(command, "1") == 0 || strcmp(command, "move") == 0) {
       
             scanf("%s", second);
             move_direction(second, game);
         }
-        if (strcmp(command, "2") == 0 || strcmp(command, "look") == 0) {
+        else if (strcmp(command, "2") == 0 || strcmp(command, "look") == 0) {
       
             look_arround(game);
         }
-        if (strcmp(command, "3") == 0 || strcmp(command, "inventory") == 0) {
+        else if (strcmp(command, "3") == 0 || strcmp(command, "inventory") == 0) {
       
             intventory_list(game);
         }
-        if (strcmp(command, "4") == 0 || strcmp(command, "pickup") == 0) {
+        else if (strcmp(command, "4") == 0 || strcmp(command, "pickup") == 0) {
             scanf("%s", second);
             pickup_item(second, game);
         }
-        if (strcmp(command, "5") == 0 || strcmp(command, "drop") == 0) {
+        else if (strcmp(command, "5") == 0 || strcmp(command, "drop") == 0) {
             scanf("%s", second);
             drop_item(second, game);
         }
-        if (strcmp(command, "6") == 0 || strcmp(command, "attack") == 0) {
+        else if (strcmp(command, "6") == 0 || strcmp(command, "attack") == 0) {
             attack(game);
         }
-        if (strcmp(command, "7") == 0 || strcmp(command, "save") == 0) {
+        else if (strcmp(command, "7") == 0 || strcmp(command, "save") == 0) {
             save_game(game, filename);
         }
-        if (strcmp(command, "8") == 0 || strcmp(command, "load") == 0) {
+        else if (strcmp(command, "8") == 0 || strcmp(command, "load") == 0) {
             load_game(game, filename);
         }
         else{
